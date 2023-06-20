@@ -1,0 +1,162 @@
+.body_icon {
+  display: flex;
+  margin: 1rem 8rem 0 0;
+  justify-content: right;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchText {
+  width: 0rem;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  transition: all 0.3s linear;
+}
+.searchBox:hover > .searchText {
+  width: 12rem;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+}
+.searchBox:hover > .search_btn {
+  background: #fff;
+  color: gray;
+}
+.searchText:focus {
+  outline: none;
+}
+
+.search_btn {
+  position: absolute;
+  color: gray;
+  right: 1rem;
+  display: grid;
+  border-radius: 50%;
+  place-items: center;
+}
+
+.all_filter {
+  display: flex;
+  justify-content: right;
+  margin: 1rem 8rem 0 0;
+}
+.filter_icon_container {
+  width: 5rem;
+  background: rgb(245, 245, 245);
+  color: gray;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.filter_box_container {
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 2px 7px 16px -2px rgba(206, 205, 205, 0.75);
+  -webkit-box-shadow: 2px 7px 16px -2px rgba(196, 196, 196, 0.75);
+  -moz-box-shadow: 2px 7px 16px -2px rgba(182, 181, 181, 0.75);
+}
+.filter_header {
+  padding: 1rem 0 0 2rem;
+}
+.type {
+  margin-bottom: 1rem;
+}
+.subs_burn_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.check_subs {
+  display: flex;
+}
+.check_subs p {
+  margin-left: 0.5rem;
+  margin-top: -0.19rem;
+}
+.check_burner {
+  display: flex;
+  margin-right: 2rem;
+}
+.check_burner p {
+  margin-left: 0.5rem;
+  margin-top: -0.19rem;
+}
+.type_container {
+  padding: 2rem 0 2rem 2rem;
+}
+.type_container p {
+  color: gray;
+}
+.select_option {
+  width: 95%;
+  height: 2.5rem;
+  background: rgb(236, 236, 236);
+  color: gray;
+  border: none;
+  outline: none;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+.filter_container_btn {
+  margin: 1rem 2rem 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.apply_btn {
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  background: rgb(255, 90, 118);
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.clear_btn {
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  background: white;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 2rem;
+  box-shadow: 2px 7px 16px -2px rgba(206, 205, 205, 0.75);
+  -webkit-box-shadow: 2px 7px 16px -2px rgba(196, 196, 196, 0.75);
+  -moz-box-shadow: 2px 7px 16px -2px rgba(182, 181, 181, 0.75);
+}
+.scroll_div {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 800px) {
+  .body_icon {
+    display: flex;
+    margin: 1rem 8% 0 0;
+    justify-content: right;
+  }
+  .filter_box_container {
+    width: 100%;
+  }
+  .all_filter {
+    display: flex;
+    justify-content: right;
+    margin: 1rem 8% 0 2rem;
+  }
+}

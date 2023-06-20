@@ -1,0 +1,81 @@
+.card_container {
+  margin: 3% 7%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 35%;
+  border-radius: 4px;
+  float: left;
+  box-shadow: 2px 7px 16px -2px rgba(206, 205, 205, 0.75);
+  -webkit-box-shadow: 2px 7px 16px -2px rgba(196, 196, 196, 0.75);
+  -moz-box-shadow: 2px 7px 16px -2px rgba(182, 181, 181, 0.75);
+}
+.top_part {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.top_part_1 h2 {
+  margin-bottom: 0.3rem;
+}
+.top_part_1 p,
+.top_part_2 p {
+  color: grey;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.burn_icon {
+  width: 3rem;
+  height: 3rem;
+  background: rgb(255, 237, 240);
+  margin-left: 4rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 7px 16px -2px rgba(206, 205, 205, 0.75);
+  -webkit-box-shadow: 2px 7px 16px -2px rgba(196, 196, 196, 0.75);
+  -moz-box-shadow: 2px 7px 16px -2px rgba(182, 181, 181, 0.75);
+}
+.bottom_part_1 p,
+.bottom_part_2 p {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.burner {
+  width: auto;
+  padding: 0 0.5rem;
+  font-size: 0.7rem;
+  background: transparent;
+  color: grey;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.green_line {
+  height: 8px;
+  background: green;
+  border-radius: 0 4px 4px 0;
+}
+.pink_line {
+  height: 8px;
+  background: rgb(255, 118, 141);
+  border-radius: 4px 0 0 4px;
+}
+.pink_green_line {
+  display: flex;
+  margin: 0 1rem;
+}
+.bottom_part {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  .main_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card_container {
+    width: 100%;
+  }
+}
